@@ -12,7 +12,7 @@ Asiakas: A tiny text-based web browser in Python
 If you want to run it from any location on your system do the following::
  
     $ git clone https://github.com/RobrechtDR/asiakas.git
-    $ pip install asiakas/dist/Asiakas-0.0.0.tar.gz
+    $ python setup.py install
 
 Then run the following command::
 
