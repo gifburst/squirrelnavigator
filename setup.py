@@ -15,12 +15,13 @@ setup(
     classifiers=[
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3 :: Only",
         "Programming Language :: Python :: Implementation :: CPython",
         "Environment :: Console",
         "Intended Audience :: Developers",
     ],
-    python_requires=">=3.9",
+    python_requires=">=3.8",
     py_modules=['akasia'],
     entry_points={
         'console_scripts': ['akasia = akasia:main', ], },
