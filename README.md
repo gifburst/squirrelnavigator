@@ -10,6 +10,7 @@
 If you want to run it from any location on your system do the following:
 
 > git clone <https://github.com/RIDERIUS/akasia.git>
+
 > python setup.py install
 
 Then run the following command:
