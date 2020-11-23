@@ -11,7 +11,8 @@ setup(
     author='RIERIUS (Asiakas fork author)',
     author_email='riderius.help@gmail.com',
     project_urls={
-        "Source": "https://github.com/RIDERIUS/Akasia"},
+        "Source": "https://github.com/RIDERIUS/Akasia",
+        "Pypi": "https://pypi.org/project/Akasia/"},
     classifiers=[
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3.9",
