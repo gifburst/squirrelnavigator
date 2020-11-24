@@ -28,7 +28,7 @@ def get_request(url: str) -> None:
         else:
             sys.exit()
 
-    cont = str(req_get.content, 'utf-8')
+    cont = str(req_get.content, 'latin-1')
     if len(cont) == 0:
         if req_get.status_code == 200:
             print(html2text.html2text(cont))
@@ -59,13 +59,18 @@ def main() -> None:
    d88P     888 888  888 "Y888888  88888P' 888 "Y888888\n\n\n''')
     print('Akasia - A fork tiny python text-based web browser Asiakas.\n'.center(58))
     print('Type "quit" or "q" to shut down the browser.'.center(58))
+    print('Type "google" or "g" to search information in Google.'.center(58))
 
     while True:
-        link = input("URL: ")
-        if link.lower() == "quit" or link.lower() == "q":
+        link = input('URL: ')
+        if link.lower() == 'quit' or link.lower() == 'q':
             break
-
-        get_request(link)
+        elif link.lower() == 'google' or link.lower() == 'g':
+           request = input('Request: ')
+           link = ('https://google.com/search?q=' + request.replace(' ', '+'))
+           get_request(link)
+        else:
+            get_request(link)
 
 
 main()
