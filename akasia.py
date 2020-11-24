@@ -65,10 +65,10 @@ def main() -> None:
         link = input('URL: ')
         if link.lower() == 'quit' or link.lower() == 'q':
             break
-        elif link.lower() == 'google' or link.lower() == 'g':
-           request = input('Request: ')
-           link = ('https://google.com/search?q=' + request.replace(' ', '+'))
-           get_request(link)
+        if link.lower() == 'google' or link.lower() == 'g':
+            request = input('Request: ')
+            link = ('https://google.com/search?q=' + request.replace(' ', '+'))
+            get_request(link)
         else:
             get_request(link)
 
