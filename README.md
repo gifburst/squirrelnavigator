@@ -1,16 +1,31 @@
-# Akasia - A fork tiny python text-based web browser Asiakas
+# Akasia
 
-**Akasia** serves as an example of ...
+Hi, **Akasia** - A fork tiny python text-based web browser **Asiakas**.
 
-- how `setup.py` looks like for a Python program consisting out of only one file.
-- how a simplified browser works.
+## Install from PIP
 
-![image](docs/akasia.png)
-
-If you want to run it from any location on your system do the following:
+You must downloading Akasia from Pypi index:
 
 > pip install Akasia
 
-Then run the following command:
+Then you must type the command:
 
-> akasia
+> Akasia
+
+## Install from source code
+
+You must downloading repositore of Akasia:
+
+> git clone https://github.com/RIDERIUS/Akasia.git
+
+Then you must type the command:
+
+> python3 setup.py install
+
+## Using
+
+![Akasia](docs/akasia.png)
+
+If you type **quit** or **q** Akasia will close.
+If you type **google** or **g** Akasia will send your request google search engine.
+If you type **URL site** Akasia will show site whose URL you entered.

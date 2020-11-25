@@ -6,7 +6,7 @@ from setuptools import setup
 
 setup(
     version='1.1.1',
-    license="MIT",
+    license="MIT License",
     name='Akasia',
     author='RIERIUS (Asiakas fork author)',
     author_email='riderius.help@gmail.com',
