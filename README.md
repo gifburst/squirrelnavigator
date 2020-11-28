@@ -1,6 +1,10 @@
+![PyPI version](https://img.shields.io/pypi/v/Akasia?label=Version&logo=Pypi&style=for-the-badge) ![license](https://img.shields.io/github/license/RIDERIUS/Akasia?style=for-the-badge) ![Downloads](https://img.shields.io/pypi/dm/Akasia?style=for-the-badge)
+
 # Akasia
 
-Hi, **Akasia** - A fork tiny python text-based web browser **Asiakas**.
+Hi, **Akasia** - A fork tiny python text-based web browser [Asiakas](https://github.com/robrechtdr/asiakas).
+
+Original author: [Robrecht De Rouck](https://github.com/robrechtdr)
 
 ## Install from PIP
 
@@ -26,6 +30,6 @@ Then you must type the command:
 
 ![Akasia](docs/akasia.png)
 
+If you type **URL site** Akasia will show site whose URL you entered.
 If you type **quit** or **q** Akasia will close.
 If you type **google** or **g** Akasia will send your request google search engine.
-If you type **URL site** Akasia will show site whose URL you entered.

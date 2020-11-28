@@ -5,14 +5,15 @@ setup.py is the Akasia setup file.
 from setuptools import setup
 
 setup(
-    version='1.1.1',
+    version='1.1.2',
     license="MIT License",
     name='Akasia',
-    author='RIERIUS (Asiakas fork author)',
-    author_email='riderius.help@gmail.com',
+    author='Robrecht De Rouck',
+    author_email='Robrecht.De.Rouck@gmail.com',
+    maintainer='RIERIUS',
+    maintainer_email='riderius.help@gmail.com',
     project_urls={
-        "Source": "https://github.com/RIDERIUS/Akasia",
-        "Pypi": "https://pypi.org/project/Akasia/"},
+        "Source": "https://github.com/RIDERIUS/Akasia"},
     classifiers=[
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3.9",

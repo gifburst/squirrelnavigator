@@ -5,44 +5,68 @@ import requests
 import html2text
 
 
-def get_request(url: str) -> None:
+# pylint settings:
+# pylint: disable=E1101
+
+
+def get_request(url: str) -> str:
     """
 
-    Function for translate binary code to text.
+    This function receives a request from the site.
 
     Args:
         url (str): A variable that stores the URL that will open in the browser Akasia.
 
     Returns:
-        None: The function returns nothing.
+        site_content (str): The variable contains the content of the site in html format.
+        request_get (str): This variable stores the request from the site.
 
     """
 
     try:
-        req_get = requests.get(url)
+        request_get = requests.get(url)
     except requests.exceptions.MissingSchema:
         choosing_the_right_url = input(
             f"Invalid URL '{url}': No schema supplied. Perhaps you meant http://{url}? (y/n) ")
         if choosing_the_right_url.lower() == 'y' or choosing_the_right_url.lower() == 'yes':
-            req_get = requests.get(f'http://{url}')
+            request_get = requests.get(f'http://{url}')
         else:
             sys.exit()
 
-    cont = str(req_get.content, 'latin-1')
-    if len(cont) == 0:
-        if req_get.status_code == 200:
-            print(html2text.html2text(cont))
-        elif req_get.status_code == 404:
-            print('Error 404, Not Found!')
-        elif req_get.status_code == 500:
-            print('Error 500, Internal server error!')
-        else:
-            print(html2text.html2text(cont))
+    try:
+        site_content = str(request_get.content, 'utf-8')
+    except UnicodeDecodeError:
+        site_content = str(request_get.content, 'latin-1')
+    return site_content, request_get
+
+
+def print_site(site_content: str, request_get: str) -> str:
+    """
+
+    This function prints the site in format markdown.
+
+    Args:
+        site_content (str): The variable contains the content of the site in html format.
+        request_get (str): This variable stores the request from the site.
+    Returns:
+        site (str): The variable stores the text of the site in markdown format.
+    """
+    if len(site_content) == 0:
+
+        if request_get.status_code == requests.codes.ok:
+            site = (html2text.html2text(site_content))
+        if request_get.status_code == 404:
+            site = ('Error 404, Not Found!')
+        if request_get.status_code == 500:
+            site = ('Error 500, Internal server error!')
+
+        site = (html2text.html2text(site_content))
 
     # If non-empty content is detected, print it.
     # This is to allow customised html error messages.
-    else:
-        print(html2text.html2text(cont))
+
+    site = (html2text.html2text(site_content))
+    return site
 
 
 def main() -> None:
@@ -68,9 +92,11 @@ def main() -> None:
         if link.lower() == 'google' or link.lower() == 'g':
             request = input('Request: ')
             link = ('https://google.com/search?q=' + request.replace(' ', '+'))
-            get_request(link)
+            cont, req_get = get_request(link)
+            print(print_site(cont, req_get))
         else:
-            get_request(link)
+            cont, req_get = get_request(link)
+            print(print_site(cont, req_get))
 
 
 main()
