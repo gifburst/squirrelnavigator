@@ -28,8 +28,9 @@ Then you must type the command:
 
 ## Using
 
-![Akasia](docs/akasia.png)
+![Akasia](https://raw.githubusercontent.com/RIDERIUS/Akasia/main/docs/akasia.png)
 
 If you type **URL site** Akasia will show site whose URL you entered.
 If you type **quit** or **q** Akasia will close.
 If you type **google** or **g** Akasia will send your request google search engine.
+If you type **save** or **s** Akasia will save site in format html.

@@ -5,7 +5,7 @@ setup.py is the Akasia setup file.
 from setuptools import setup
 
 setup(
-    version='1.1.2',
+    version='1.2.0',
     license="MIT License",
     name='Akasia',
     author='Robrecht De Rouck',
@@ -29,6 +29,7 @@ setup(
         'console_scripts': ['akasia = akasia:main', ], },
     description='A fork tiny python text-based web browser Asiakas.',
     long_description=open('README.md').read(),
+    long_description_content_type="text/markdown",
     install_requires=[
         "certifi==2020.11.8",
         "chardet==3.0.4",
