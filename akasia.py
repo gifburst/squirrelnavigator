@@ -88,6 +88,22 @@ def save_site_in_html(site_content: str, path: str) -> None:
     file.write(site_content)
     file.close()
 
+def save_site_in_markdown(site_content: str, path: str) -> None:
+    """
+
+    This function is needed to save the site in markdown format.
+
+    Args:
+        site_content (str): This variable stores the site in html format.
+        path (str): This variable stores path which will saved site in format html.
+
+    Returns:
+        None: The function returns nothing.
+
+    """
+    file = open(path, 'w')
+    file.write(html2text.html2text(site_content))
+    file.close()
 
 def main() -> None:
     """ This is main function, what initializing web browser Akasia. """
@@ -104,7 +120,8 @@ def main() -> None:
     print('Akasia - A fork tiny python text-based web browser Asiakas.\n'.center(58))
     print('Type "quit" or "q" to shut down the browser.'.center(58))
     print('Type "google" or "g" to search information in Google.'.center(58))
-    print('Type "save" or "s" to save site in format html.'.center(58))
+    print('Type "save_html" or "sh" to save site in format html.'.center(58))
+    print('Type "save_markdown" or "smd" to save site in format html.'.center(58))
 
     while True:
         link = input('URL: ')
@@ -115,11 +132,16 @@ def main() -> None:
             link = ('https://google.com/search?q=' + request.replace(' ', '+'))
             cont, req_get = get_request(link)
             print(print_site(cont, req_get))
-        elif link.lower() == 'save' or link.lower() == 's':
+        elif link.lower() == 'save_html' or link.lower() == 'sh':
             link = input('URL: ')
             path = input('Path: ')
             cont, req_get = get_request(link)
             save_site_in_html(cont, path)
+        elif link.lower() == 'save_markdown' or link.lower() == 'smd':
+            link = input('URL: ')
+            path = input('Path: ')
+            cont, req_get = get_request(link)
+            save_site_in_markdown(cont, path)
         else:
             cont, req_get = get_request(link)
             print(print_site(cont, req_get))

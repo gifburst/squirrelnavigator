@@ -5,7 +5,7 @@ setup.py is the Akasia setup file.
 from setuptools import setup
 
 setup(
-    version='1.2.0',
+    version='1.3.0',
     license="MIT License",
     name='Akasia',
     author='Robrecht De Rouck',
