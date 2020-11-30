@@ -5,7 +5,7 @@ setup.py is the Akasia setup file.
 from setuptools import setup
 
 setup(
-    version='1.3.0',
+    version='1.4.0',
     license="MIT License",
     name='Akasia',
     author='Robrecht De Rouck',
@@ -31,11 +31,14 @@ setup(
     long_description=open('README.md').read(),
     long_description_content_type="text/markdown",
     install_requires=[
-        "certifi==2020.11.8",
-        "chardet==3.0.4",
-        "html2text==2020.1.16",
-        "idna==2.10",
-        "requests==2.25.0",
-        "urllib3==1.26.2"
+        'beautifulsoup4==4.9.3',
+        'certifi==2020.11.8',
+        'chardet==3.0.4',
+        'html2text==2020.1.16',
+        'idna==2.10',
+        'requests==2.25.0',
+        'soupsieve==2.0.1',
+        'urllib3==1.26.2',
+        'wikipedia==1.4.0'
     ]
 )

@@ -3,7 +3,9 @@
 import sys
 import requests
 import html2text
+import wikipedia
 
+version = '1.4.0'
 
 # pylint settings:
 # pylint: disable=E1101
@@ -117,9 +119,11 @@ def main() -> None:
      d88P   888 888888K  .d888888 "Y8888b. 888 .d888888 
     d8888888888 888 "88b 888  888      X88 888 888  888 
    d88P     888 888  888 "Y888888  88888P' 888 "Y888888\n\n\n''')
+    print(f'Version - {version}\n'.center(58))
     print('Akasia - A fork tiny python text-based web browser Asiakas.\n'.center(58))
     print('Type "quit" or "q" to shut down the browser.'.center(58))
     print('Type "google" or "g" to search information in Google.'.center(58))
+    print('Type "wikipedia" or "w" to search information in Wikipedia.'.center(58))
     print('Type "save_html" or "sh" to save site in format html.'.center(58))
     print('Type "save_markdown" or "smd" to save site in format html.'.center(58))
 
@@ -132,6 +136,14 @@ def main() -> None:
             link = ('https://google.com/search?q=' + request.replace(' ', '+'))
             cont, req_get = get_request(link)
             print(print_site(cont, req_get))
+        elif link.lower() == 'wikipedia' or link.lower() == 'w':
+            try:
+                request = input('Request: ')
+                language = input('Language on search in Wikipedia: ')
+                wikipedia.set_lang(language)
+                print(wikipedia.summary(request))
+            except wikipedia.exceptions.PageError:
+                print('Request page not found')
         elif link.lower() == 'save_html' or link.lower() == 'sh':
             link = input('URL: ')
             path = input('Path: ')
