@@ -5,7 +5,7 @@ import requests
 import html2text
 import wikipedia
 
-version = '1.4.0'
+VERSION = '1.4.1'
 
 # pylint settings:
 # pylint: disable=E1101
@@ -85,10 +85,10 @@ def save_site_in_html(site_content: str, path: str) -> None:
 
     """
 
-
     file = open(path, 'w')
     file.write(site_content)
     file.close()
+
 
 def save_site_in_markdown(site_content: str, path: str) -> None:
     """
@@ -107,6 +107,7 @@ def save_site_in_markdown(site_content: str, path: str) -> None:
     file.write(html2text.html2text(site_content))
     file.close()
 
+
 def main() -> None:
     """ This is main function, what initializing web browser Akasia. """
 
@@ -119,7 +120,7 @@ def main() -> None:
      d88P   888 888888K  .d888888 "Y8888b. 888 .d888888 
     d8888888888 888 "88b 888  888      X88 888 888  888 
    d88P     888 888  888 "Y888888  88888P' 888 "Y888888\n\n\n''')
-    print(f'Version - {version}\n'.center(58))
+    print(f'Version - {VERSION}\n'.center(58))
     print('Akasia - A fork tiny python text-based web browser Asiakas.\n'.center(58))
     print('Type "quit" or "q" to shut down the browser.'.center(58))
     print('Type "google" or "g" to search information in Google.'.center(58))
