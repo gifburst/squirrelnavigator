@@ -1,4 +1,4 @@
-![PyPI version](https://img.shields.io/pypi/v/Akasia?label=Version&logo=Pypi&style=for-the-badge) ![license](https://img.shields.io/github/license/RIDERIUS/Akasia?style=for-the-badge) ![Downloads](https://img.shields.io/pypi/dm/Akasia?style=for-the-badge) ![rank](https://img.shields.io/librariesio/sourcerank/pypi/Akasia?style=for-the-badge)
+![PyPI version](https://img.shields.io/pypi/v/Akasia?label=Version&logo=Pypi&style=for-the-badge) ![license](https://img.shields.io/github/license/RIDERIUS/Akasia?style=for-the-badge) ![Downloads](https://img.shields.io/pypi/dm/Akasia?style=for-the-badge) ![rank](https://img.shields.io/librariesio/sourcerank/pypi/Akasia?style=for-the-badge) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/Akasia?style=for-the-badge)
 
 # Akasia
 
