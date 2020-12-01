@@ -5,7 +5,7 @@ setup.py is the Akasia setup file.
 from setuptools import setup
 
 setup(
-    version='1.4.1',
+    version='1.4.2',
     license="MIT License",
     name='Akasia',
     author='Robrecht De Rouck',
@@ -13,7 +13,7 @@ setup(
     maintainer='RIERIUS',
     maintainer_email='riderius.help@gmail.com',
     project_urls={
-        "Source": "https://github.com/RIDERIUS/Akasia"},
+        "Source Code": "https://github.com/RIDERIUS/Akasia"},
     classifiers=[
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3.9",

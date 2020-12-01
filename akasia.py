@@ -5,7 +5,7 @@ import requests
 import html2text
 import wikipedia
 
-VERSION = '1.4.1'
+VERSION = '1.4.2'
 
 # pylint settings:
 # pylint: disable=E1101
@@ -126,7 +126,7 @@ def main() -> None:
     print('Type "google" or "g" to search information in Google.'.center(58))
     print('Type "wikipedia" or "w" to search information in Wikipedia.'.center(58))
     print('Type "save_html" or "sh" to save site in format html.'.center(58))
-    print('Type "save_markdown" or "smd" to save site in format html.'.center(58))
+    print('Type "save_markdown" or "smd" to save site in format markdown.'.center(58))
 
     while True:
         link = input('URL: ')
