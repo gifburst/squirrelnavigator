@@ -5,12 +5,12 @@ setup.py is the Akasia setup file.
 from setuptools import setup
 
 setup(
-    version='1.4.2',
+    version='1.4.3',
     license="MIT License",
     name='Akasia',
     author='Robrecht De Rouck',
     author_email='Robrecht.De.Rouck@gmail.com',
-    maintainer='RIERIUS',
+    maintainer='RIDERIUS',
     maintainer_email='riderius.help@gmail.com',
     project_urls={
         "Source Code": "https://github.com/RIDERIUS/Akasia"},
