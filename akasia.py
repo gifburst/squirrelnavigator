@@ -5,7 +5,7 @@ import requests
 import html2text
 import wikipedia
 
-VERSION = '1.4.3'
+VERSION = '1.4.4'
 
 # pylint settings:
 # pylint: disable=E1101
@@ -97,7 +97,7 @@ def save_site_in_markdown(site_content: str, path: str) -> None:
 
     Args:
         site_content (str): This variable stores the site in html format.
-        path (str): This variable stores path which will saved site in format html.
+        path (str): This variable stores path which will saved site in format markdown.
 
     Returns:
         None: The function returns nothing.
@@ -140,11 +140,13 @@ def main() -> None:
         elif link.lower() == 'wikipedia' or link.lower() == 'w':
             try:
                 request = input('Request: ')
-                language = input('Language on search in Wikipedia: ')
+                language = input('Language on search in Wikipedia (Please type language by first two letters in language name, otherwise will be error in this programm.): ')
                 wikipedia.set_lang(language)
                 print(wikipedia.summary(request))
             except wikipedia.exceptions.PageError:
                 print('Request page not found')
+            except requests.exceptions.ConnectionError:
+                print('Please type language by first two letters in language name, otherwise will be error in this programm.')
         elif link.lower() == 'save_html' or link.lower() == 'sh':
             link = input('URL: ')
             path = input('Path: ')
