@@ -5,7 +5,7 @@ import requests
 import html2text
 import wikipedia
 
-VERSION = '1.4.4'
+VERSION = '1.5.0'
 
 # pylint settings:
 # pylint: disable=E1101
@@ -140,13 +140,19 @@ def main() -> None:
         elif link.lower() == 'wikipedia' or link.lower() == 'w':
             try:
                 request = input('Request: ')
-                language = input('Language on search in Wikipedia (Please type language by first two letters in language name, otherwise will be error in this programm.): ')
+                language = input('Language on search in Wikipedia: ')
                 wikipedia.set_lang(language)
-                print(wikipedia.summary(request))
+                wiki_page = wikipedia.page(request)
+                type_text = input('Full text(y/n) ')
+                if type_text.lower() == 'y':
+                    print(wiki_page.content)
+                elif type_text.lower() == 'n':
+                    print(wikipedia.summary(request))
+                print('\nPage URL: ' + wiki_page.url)
             except wikipedia.exceptions.PageError:
                 print('Request page not found')
             except requests.exceptions.ConnectionError:
-                print('Please type language by first two letters in language name, otherwise will be error in this programm.')
+                print('Please type language by first two letters in language name.')
         elif link.lower() == 'save_html' or link.lower() == 'sh':
             link = input('URL: ')
             path = input('Path: ')
