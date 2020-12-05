@@ -2,6 +2,11 @@
 Changelog
 =========
 
+Version 1.5.1
+=============
+
+- Added project site URLs to documentation files.
+
 Version 1.5.0
 =============
 

@@ -2,16 +2,6 @@
 Akasia
 ======
 
-This is the documentation of **Akasia**.
-
-Akasia README File
-==================
-
-
-.. image:: https://img.shields.io/pypi/v/Akasia?label=Version&logo=Pypi&style=for-the-badge
-   :target: https://img.shields.io/pypi/v/Akasia?label=Version&logo=Pypi&style=for-the-badge
-   :alt: PyPI version
- 
 .. image:: https://img.shields.io/github/license/RIDERIUS/Akasia?style=for-the-badge
    :target: https://img.shields.io/github/license/RIDERIUS/Akasia?style=for-the-badge
    :alt: license
@@ -28,9 +18,6 @@ Akasia README File
    :target: https://img.shields.io/pypi/pyversions/Akasia?style=for-the-badge
    :alt: PyPI - Python Version
 
-
-Akasia
-======
 
 Hi, **Akasia** - A fork tiny python text-based web browser `Asiakas <https://github.com/robrechtdr/asiakas>`_.
 
@@ -85,6 +72,11 @@ If you type **google** or **g** Akasia will send your request Google search engi
 If you type **wikipedia** or **w** Akasia will send your request Wikipedia.
 If you type **save** or **s** Akasia will save site in format html.
 
+Urls
+----
+
+- Pypi - [https://pypi.org/project/Akasia/](https://pypi.org/project/Akasia/)
+- Read The Docs - [https://akasia.readthedocs.io/](https://akasia.readthedocs.io/)
 
 Contents
 ========
