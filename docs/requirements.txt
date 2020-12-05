@@ -4,7 +4,7 @@
 #
 #    pip-compile '.\requirements.txt'
 #
-akasia==1.5.1             # via -r .\requirements.txt
+akasia==1.5.2             # via -r .\requirements.txt
 alabaster==0.7.12         # via sphinx
 babel==2.9.0              # via sphinx
 beautifulsoup4==4.9.3     # via akasia, wikipedia
