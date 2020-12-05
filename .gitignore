@@ -136,4 +136,5 @@ dmypy.json
 .vscode/
 
 # Sphinx documentation
-docs\build
+docs/build
+source/_build/
