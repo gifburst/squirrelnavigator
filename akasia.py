@@ -5,7 +5,7 @@ import requests
 import html2text
 import wikipedia
 
-VERSION = '1.5.1'
+VERSION = '1.5.2'
 
 # pylint settings:
 # pylint: disable=E1101

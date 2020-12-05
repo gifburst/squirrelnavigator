@@ -21,14 +21,14 @@ copyright = '2020, RIDERIUS'
 author = 'RIDERIUS'
 
 # The full version, including alpha/beta/rc tags
-release = '1.5.0'
+release = '1.5.2'
 
 # -- General configuration ---------------------------------------------------
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ["sphinx_rtd_theme", "sphinxcontrib.napoleon", "Akasia"]
+extensions = ["sphinx_rtd_theme", "sphinxcontrib.napoleon"]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']

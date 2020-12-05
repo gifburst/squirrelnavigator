@@ -2,6 +2,11 @@
 Changelog
 =========
 
+Version 1.5.2
+=============
+
+- Added python 3.7 support
+
 Version 1.5.1
 =============
 

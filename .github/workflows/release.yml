@@ -21,9 +21,7 @@ jobs:
         with:
           tag_name: ${{ github.ref }}
           release_name: Release ${{ github.ref }}
-          body: |
-            Changes in this Release
-            - I will added here text, when i can.
+          body_path: CHANGELOG.rst
           draft: true
           prerelease: false
       - name: Set up Python
