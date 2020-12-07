@@ -38,5 +38,6 @@ If you type **save** or **s** Akasia will save site in format html.
 
 ## Urls
 
+- Source Code - [https://github.com/RIDERIUS/Akasia](https://github.com/RIDERIUS/Akasia)
 - Pypi - [https://pypi.org/project/Akasia/](https://pypi.org/project/Akasia/)
 - Read The Docs - [https://akasia.readthedocs.io/](https://akasia.readthedocs.io/)

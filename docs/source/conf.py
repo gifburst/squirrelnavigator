@@ -1,8 +1,14 @@
+"""
 # Configuration file for the Sphinx documentation builder.
 #
 # This file only contains a selection of the most common options. For a full
 # list see the documentation:
-# https://www.sphinx-doc.org/en/master/usage/configuration.html
+# https://www.sphinx-doc.org/en/master/usage/configuration.html 
+"""
+
+# pylint settings:
+# pylint: disable=C0103
+# pylint: disable=W0622
 
 # -- Path setup --------------------------------------------------------------
 
