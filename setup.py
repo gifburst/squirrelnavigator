@@ -34,7 +34,7 @@ setup(
     long_description_content_type="text/markdown",
     install_requires=[
         'beautifulsoup4==4.9.3',
-        'certifi==2020.11.8',
+        'certifi==2020.12.5',
         'chardet==3.0.4',
         'html2text==2020.1.16',
         'idna==2.10',
