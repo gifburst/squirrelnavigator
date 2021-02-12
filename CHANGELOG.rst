@@ -2,6 +2,11 @@
 Changelog
 =========
 
+Version 1.5.5
+=============
+
+- I fixed the conflict of requirements
+
 Version 1.5.4
 =============
 

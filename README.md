@@ -34,7 +34,8 @@ If you type **URL site** Akasia will show site whose URL you entered.
 If you type **quit** or **q** Akasia will close.
 If you type **google** or **g** Akasia will send your request Google search engine.
 If you type **wikipedia** or **w** Akasia will send your request Wikipedia.
-If you type **save** or **s** Akasia will save site in format html.
+If you type **save_html** or **sh** to save site in format html.
+If you type **save_markdown** or **smd** to save site in format markdown.
 
 ## Urls
 
