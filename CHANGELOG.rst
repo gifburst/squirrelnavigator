@@ -2,6 +2,11 @@
 Changelog
 =========
 
+Version 1.5.4
+=============
+
+- Fixed version display in Akasia
+
 Version 1.5.3
 =============
 
