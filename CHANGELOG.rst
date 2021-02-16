@@ -2,6 +2,11 @@
 Changelog
 =========
 
+Version 1.6.0
+=============
+
+- Started using a dock-python instead sphinx
+
 Version 1.5.5
 =============
 

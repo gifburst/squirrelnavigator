@@ -1,16 +1,40 @@
-""" This is main module web browser Akasia. """
+<link rel="stylesheet" href="https://casual-effects.com/markdeep/latest/journal.css?">## Module `akasia` 
 
-import sys
-import requests
-import html2text
-import wikipedia
-import dock
+This is main module web browser Akasia. 
+- Function [get_request](#Function-akasia.get_request)
+- Function [print_site](#Function-akasia.print_site)
+- Function [save_site_in_html](#Function-akasia.save_site_in_html)
+- Function [save_site_in_markdown](#Function-akasia.save_site_in_markdown)
+- Function [main](#Function-akasia.main)
+#### Function `akasia.get_request` 
 
-VERSION = '1.6.0'
+**Arguments**
 
-# pylint settings:
-# pylint: disable=E1101
+- `url` -> `builtins.str`: 
 
+
+**Return Type:** `builtins.str`
+
+
+
+
+This function receives a request from the site.
+
+Args:
+    url (str): A variable that stores the URL that will open in the browser Akasia.
+
+Returns:
+    site_content (str): The variable contains the content of the site in html format.
+    request_get (str): This variable stores the request from the site.
+
+
+
+
+
+
+<details><summary>Source</summary>
+
+```python
 @dock()
 def get_request(url: str) -> str:
     """
@@ -42,7 +66,38 @@ def get_request(url: str) -> str:
         site_content = str(request_get.content, 'latin-1')
     return site_content, request_get
 
+```
 
+</details>
+
+#### Function `akasia.print_site` 
+
+**Arguments**
+
+- `site_content` -> `builtins.str`: 
+- `request_get` -> `builtins.str`: 
+
+
+**Return Type:** `builtins.str`
+
+
+
+
+This function prints the site in format markdown.
+
+Args:
+    site_content (str): The variable contains the content of the site in html format.
+    request_get (str): This variable stores the request from the site.
+Returns:
+    site (str): The variable stores the text of the site in markdown format.
+
+
+
+
+
+<details><summary>Source</summary>
+
+```python
 @dock()
 def print_site(site_content: str, request_get: str) -> str:
     """
@@ -72,7 +127,40 @@ def print_site(site_content: str, request_get: str) -> str:
     site = (html2text.html2text(site_content))
     return site
 
+```
 
+</details>
+
+#### Function `akasia.save_site_in_html` 
+
+**Arguments**
+
+- `site_content` -> `builtins.str`: 
+- `path` -> `builtins.str`: 
+
+
+**Return Type:** `?`
+
+
+
+
+This function is needed to save the site in html format.
+
+Args:
+    site_content (str): This variable stores the site in html format.
+    path (str): This variable stores path which will saved site in format html.
+
+Returns:
+    None: The function returns nothing.
+
+
+
+
+
+
+<details><summary>Source</summary>
+
+```python
 @dock()
 def save_site_in_html(site_content: str, path: str) -> None:
     """
@@ -92,7 +180,40 @@ def save_site_in_html(site_content: str, path: str) -> None:
     file.write(site_content)
     file.close()
 
+```
 
+</details>
+
+#### Function `akasia.save_site_in_markdown` 
+
+**Arguments**
+
+- `site_content` -> `builtins.str`: 
+- `path` -> `builtins.str`: 
+
+
+**Return Type:** `?`
+
+
+
+
+This function is needed to save the site in markdown format.
+
+Args:
+    site_content (str): This variable stores the site in html format.
+    path (str): This variable stores path which will saved site in format markdown.
+
+Returns:
+    None: The function returns nothing.
+
+
+
+
+
+
+<details><summary>Source</summary>
+
+```python
 @dock()
 def save_site_in_markdown(site_content: str, path: str) -> None:
     """
@@ -111,7 +232,27 @@ def save_site_in_markdown(site_content: str, path: str) -> None:
     file.write(html2text.html2text(site_content))
     file.close()
 
+```
 
+</details>
+
+#### Function `akasia.main` 
+
+**Arguments**
+
+
+
+**Return Type:** `?`
+
+
+This is main function, what initializing web browser Akasia. 
+
+
+
+
+<details><summary>Source</summary>
+
+```python
 @dock()
 def main() -> None:
     """ This is main function, what initializing web browser Akasia. """
@@ -172,5 +313,8 @@ def main() -> None:
             cont, req_get = get_request(link)
             print(print_site(cont, req_get))
 
+```
 
-main()
+</details>
+
+<!-- Markdeep: --><style class="fallback">body{visibility:hidden;white-space:pre;font-family:monospace}</style><script src="markdeep.min.js" charset="utf-8"></script><script src="https://morgan3d.github.io/markdeep/latest/markdeep.min.js" charset="utf-8"></script><script>window.alreadyProcessedMarkdeep||(document.body.style.visibility="visible")</script>

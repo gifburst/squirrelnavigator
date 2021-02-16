@@ -41,4 +41,7 @@ If you type **save_markdown** or **smd** to save site in format markdown.
 
 - Source Code - [https://github.com/RIDERIUS/Akasia](https://github.com/RIDERIUS/Akasia)
 - Pypi - [https://pypi.org/project/Akasia/](https://pypi.org/project/Akasia/)
-- Read The Docs - [https://akasia.readthedocs.io/](https://akasia.readthedocs.io/)
+
+## Module reference
+
+[Akasia.py](docs\akasia.md)
