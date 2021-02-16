@@ -2,6 +2,11 @@
 Changelog
 =========
 
+Version 1.6.1
+=============
+
+- Update requirements
+
 Version 1.6.0
 =============
 
