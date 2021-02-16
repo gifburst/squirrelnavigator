@@ -44,4 +44,4 @@ If you type **save_markdown** or **smd** to save site in format markdown.
 
 ## Module reference
 
-[Akasia.py](docs\akasia.md)
+[Akasia.py](https://github.com/RIDERIUS/Akasia/blob/main/docs/akasia.md)
