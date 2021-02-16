@@ -1,4 +1,6 @@
-<link rel="stylesheet" href="https://casual-effects.com/markdeep/latest/journal.css?">## Module `akasia` 
+<link rel="stylesheet" href="https://casual-effects.com/markdeep/latest/journal.css?">
+
+## Module `akasia` 
 
 This is main module web browser Akasia. 
 - Function [get_request](#Function-akasia.get_request)
