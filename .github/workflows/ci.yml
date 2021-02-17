@@ -30,4 +30,4 @@ jobs:
       - name: Tests
         run: |
           cd tests
-          python test_akasia.py
+          python3 test_akasia.py
