@@ -6,7 +6,7 @@ import html2text
 import wikipedia
 import dock
 
-VERSION = '1.6.1'
+VERSION = '1.6.2'
 
 # pylint settings:
 # pylint: disable=E1101

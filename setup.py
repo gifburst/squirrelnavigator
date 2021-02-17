@@ -5,7 +5,7 @@ setup.py is the Akasia setup file.
 from setuptools import setup
 
 setup(
-    version='1.6.1',
+    version='1.6.2',
     license="MIT License",
     name='Akasia',
     author='Robrecht De Rouck',
@@ -19,12 +19,13 @@ setup(
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3 :: Only",
         "Programming Language :: Python :: Implementation :: CPython",
         "Environment :: Console",
         "Intended Audience :: Developers",
     ],
-    python_requires=">=3.7",
+    python_requires=">=3.6",
     py_modules=['akasia'],
     entry_points={
         'console_scripts': ['akasia = akasia:main', ], },

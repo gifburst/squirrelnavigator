@@ -2,6 +2,11 @@
 Changelog
 =========
 
+Version 1.6.2
+=============
+
+- Added support for Python 3.6 version
+
 Version 1.6.1
 =============
 
