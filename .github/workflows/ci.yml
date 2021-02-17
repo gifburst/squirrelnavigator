@@ -29,4 +29,5 @@ jobs:
           python -m pip install -r requirements.txt
       - name: Tests
         run: |
-          python tests\test_akasia.py
+          cd tests
+          python test_akasia.py

@@ -10,6 +10,7 @@ VERSION = '1.6.1'
 
 # pylint settings:
 # pylint: disable=E1101
+# pylint: disable=E1102
 
 
 @dock()
