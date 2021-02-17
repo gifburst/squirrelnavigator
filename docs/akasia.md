@@ -3,11 +3,11 @@
 ## Module `akasia` 
 
 This is main module web browser Akasia. 
-- Function [get_request](#Function-akasia.get_request)
-- Function [print_site](#Function-akasia.print_site)
-- Function [save_site_in_html](#Function-akasia.save_site_in_html)
-- Function [save_site_in_markdown](#Function-akasia.save_site_in_markdown)
-- Function [main](#Function-akasia.main)
+- Function [get_request](#function-akasiaget_request)
+- Function [print_site](#function-akasiaprint_site)
+- Function [save_site_in_html](#function-akasiasave_site_in_html)
+- Function [save_site_in_markdown](#function-akasiasave_site_in_markdown)
+- Function [main](#function-akasiamain)
 #### Function `akasia.get_request` 
 
 **Arguments**
