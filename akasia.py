@@ -11,6 +11,7 @@ VERSION = '1.6.1'
 # pylint settings:
 # pylint: disable=E1101
 
+
 @dock()
 def get_request(url: str) -> str:
     """
