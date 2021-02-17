@@ -25,13 +25,11 @@ jobs:
 
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip
+          python -m pip install --upgrade pip setuptools
           python -m pip install -r requirements.txt
       - name: Tests
         run: |
           cd tests
           python3 test_akasia.py
       - name: Installing
-        run: |
-          cd ..
-          python setup.py install
+        run: python setup.py install
