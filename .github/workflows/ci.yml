@@ -31,3 +31,7 @@ jobs:
         run: |
           cd tests
           python3 test_akasia.py
+      - name: Installing
+        run: |
+          cd ..
+          python setup.py install
