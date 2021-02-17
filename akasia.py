@@ -174,4 +174,5 @@ def main() -> None:
             print(print_site(cont, req_get))
 
 
-main()
+if __name__ == "__main__":
+    main()
