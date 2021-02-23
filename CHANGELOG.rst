@@ -2,6 +2,12 @@
 Changelog
 =========
 
+Version 1.6.3
+=============
+
+- Changed the name of the request_get variable to response
+- Added one test to test_akasia.py
+
 Version 1.6.2
 =============
 

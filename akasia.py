@@ -1,3 +1,5 @@
+# coding: utf-8
+
 """ This is main module web browser Akasia. """
 
 import sys
@@ -6,7 +8,7 @@ import html2text
 import wikipedia
 import dock
 
-VERSION = '1.6.2'
+VERSION = '1.6.3'
 
 # pylint settings:
 # pylint: disable=E1101
@@ -24,46 +26,43 @@ def get_request(url: str) -> str:
 
     Returns:
         site_content (str): The variable contains the content of the site in html format.
-        request_get (str): This variable stores the request from the site.
+        response (str): This variable stores the request from the site.
 
     """
 
     try:
-        request_get = requests.get(url)
+        response = requests.get(url)
     except requests.exceptions.MissingSchema:
         choosing_the_right_url = input(
             f"Invalid URL '{url}': No schema supplied. Perhaps you meant http://{url}? (y/n) ")
         if choosing_the_right_url.lower() == 'y' or choosing_the_right_url.lower() == 'yes':
-            request_get = requests.get(f'http://{url}')
+            response = requests.get(f'http://{url}')
         else:
             sys.exit()
 
-    try:
-        site_content = str(request_get.content, 'utf-8')
-    except UnicodeDecodeError:
-        site_content = str(request_get.content, 'latin-1')
-    return site_content, request_get
+    site_content = str(response.content, response.encoding)
+    return site_content, response
 
 
 @dock()
-def print_site(site_content: str, request_get: str) -> str:
+def print_site(site_content: str, response: str) -> str:
     """
 
     This function prints the site in format markdown.
 
     Args:
         site_content (str): The variable contains the content of the site in html format.
-        request_get (str): This variable stores the request from the site.
+        response (str): This variable stores the request from the site.
     Returns:
         site (str): The variable stores the text of the site in markdown format.
     """
     if len(site_content) == 0:
 
-        if request_get.status_code == requests.codes.ok:
+        if response.status_code == requests.codes.ok:
             site = (html2text.html2text(site_content))
-        if request_get.status_code == 404:
+        if response.status_code == 404:
             site = ('Error 404, Not Found!')
-        if request_get.status_code == 500:
+        if response.status_code == 500:
             site = ('Error 500, Internal server error!')
 
         site = (html2text.html2text(site_content))
