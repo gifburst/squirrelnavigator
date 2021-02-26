@@ -1,11 +1,10 @@
 import unittest
 import sys
-import html2text
 sys.path.insert(0, '../')
 import akasia
 
 
-class TestMain(unittest.TestCase):
+class Test(unittest.TestCase):
 
     maxDiff = None
 
