@@ -2,10 +2,6 @@
 Changelog
 =========
 
-Version 1.7.1
-=============
-- Update requirements.txt
-
 Version 1.7.0
 =============
 - Added a rich module for a beautiful view of sites
