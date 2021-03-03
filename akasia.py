@@ -7,8 +7,11 @@ import requests
 import html2text
 import wikipedia
 import dock
+from rich.console import Console
+from rich.markdown import Markdown
 
-VERSION = '1.6.3'
+VERSION = '1.7.0'
+console = Console()
 
 # pylint settings:
 # pylint: disable=E1101
@@ -142,7 +145,8 @@ def main() -> None:
             request = input('Request: ')
             link = ('https://google.com/search?q=' + request.replace(' ', '+'))
             cont, req_get = get_request(link)
-            print(print_site(cont, req_get))
+            markdown_site = Markdown(print_site(cont, req_get))
+            console.print(markdown_site)
         elif link.lower() == 'wikipedia' or link.lower() == 'w':
             try:
                 request = input('Request: ')
@@ -171,7 +175,8 @@ def main() -> None:
             save_site_in_markdown(cont, path)
         else:
             cont, req_get = get_request(link)
-            print(print_site(cont, req_get))
+            markdown_site = Markdown(print_site(cont, req_get))
+            console.print(markdown_site)
 
 
 if __name__ == "__main__":

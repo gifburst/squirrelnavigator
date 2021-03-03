@@ -2,6 +2,10 @@
 Changelog
 =========
 
+Version 1.7.0
+=============
+- Added a rich module for a beautiful view of sites
+
 Version 1.6.3
 =============
 
