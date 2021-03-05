@@ -1,6 +1,6 @@
-![license](https://img.shields.io/github/license/RIDERIUS/Akasia?style=for-the-badge) ![Downloads](https://img.shields.io/pypi/dm/Akasia?style=for-the-badge) ![rank](https://img.shields.io/librariesio/sourcerank/pypi/Akasia?style=for-the-badge) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/Akasia?style=for-the-badge)
-
 # Akasia
+
+![license](https://img.shields.io/github/license/RIDERIUS/Akasia?style=for-the-badge) ![Downloads](https://img.shields.io/pypi/dm/Akasia?style=for-the-badge) ![rank](https://img.shields.io/librariesio/sourcerank/pypi/Akasia?style=for-the-badge) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/Akasia?style=for-the-badge)
 
 Hi, **Akasia** - A fork tiny python text-based web browser [Asiakas](https://github.com/robrechtdr/asiakas).
 
@@ -20,7 +20,7 @@ Then you must type the command:
 
 You must downloading repositore of Akasia:
 
-> git clone https://github.com/RIDERIUS/Akasia.git
+> git clone <https://github.com/RIDERIUS/Akasia.git>
 
 Then you must type the command:
 
