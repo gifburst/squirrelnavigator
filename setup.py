@@ -23,7 +23,7 @@ setup(
         "Programming Language :: Python :: 3 :: Only",
         "Programming Language :: Python :: Implementation :: CPython",
         "Environment :: Console",
-        "Intended Audience :: Developers",
+        "Topic :: Internet :: WWW/HTTP :: Browsers",
     ],
     python_requires=">=3.6",
     py_modules=['akasia'],
