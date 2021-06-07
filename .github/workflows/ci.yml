@@ -30,6 +30,6 @@ jobs:
       - name: Tests
         run: |
           cd tests
-          python3 test_akasia.py
+          python3 test_Squirrel-Navigator.py
       - name: Installing
         run: python setup.py install
