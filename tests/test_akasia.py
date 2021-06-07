@@ -1,7 +1,7 @@
 import unittest
 import sys
 sys.path.insert(0, '../')
-import akasia
+import squirrelnavigator
 
 
 class Test(unittest.TestCase):
@@ -9,11 +9,11 @@ class Test(unittest.TestCase):
     maxDiff = None
 
     def test_get_request_status(self):
-        request_get = akasia.get_request('https://httpbin.org/status/200')
+        request_get = squirrelnavigator.get_request('https://httpbin.org/status/200')
         self.assertEqual(request_get[1].status_code, 200)
 
     def test_get_request_html(self):
-        request_get = akasia.get_request('https://httpbin.org/html')
+        request_get = squirrelnavigator.get_request('https://httpbin.org/html')
         self.assertEqual(request_get[0], '''<!DOCTYPE html>
 <html>
   <head>
@@ -31,5 +31,5 @@ class Test(unittest.TestCase):
 
 
 if __name__ == "__main__":
-    print('Version: ' + akasia.VERSION + '\n')
+    print('Version: ' + squirrelnavigator.VERSION + '\n')
     unittest.main()
