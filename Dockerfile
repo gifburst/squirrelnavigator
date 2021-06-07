@@ -7,4 +7,4 @@ COPY . /usr/src/app
 
 RUN python setup.py install
 
-CMD ["akasia"]
+CMD ["squirrelnavigator"]
