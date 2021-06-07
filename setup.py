@@ -10,10 +10,10 @@ setup(
     name='Squirrel-Navigator',
     author='squirrelcom',
     author_email='nope.gmail',
-    maintainer='RIDERIUS',
-    maintainer_email='riderius.help@gmail.com',
+    maintainer='squirrelcom',
+    maintainer_email='squirrelcom@gmail.com',
     project_urls={
-        "Source Code": "https://github.com/RIDERIUS/Akasia"},
+        "Source Code": "https://github.com/squirrelcom/Squirrel-Navigator"},
     classifiers=[
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3.9",
@@ -29,7 +29,7 @@ setup(
     py_modules=['akasia'],
     entry_points={
         'console_scripts': ['akasia = akasia:main', ], },
-    description='A fork tiny python text-based web browser Asiakas.',
+    description='A private and secure text-based web browser Asiakas.',
     long_description=open('README.md').read(),
     long_description_content_type="text/markdown",
     install_requires=[
