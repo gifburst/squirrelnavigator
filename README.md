@@ -2,7 +2,7 @@
 
 **Squirrel Navigator** - A secure and private text-based web browser
 
-## Install from source code
+## How to Install
 
 You must downloading repositore of Squirrel Navigator:
 
