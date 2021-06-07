@@ -1,6 +1,6 @@
 # coding: utf-8
 
-""" This is main module web browser Akasia. """
+""" This is main module web browser Squirrel-Navigator. """
 
 import sys
 import requests
@@ -10,7 +10,7 @@ import dock
 from rich.console import Console
 from rich.markdown import Markdown
 
-VERSION = '1.7.0'
+VERSION = '0.1'
 console = Console()
 
 # pylint settings:
@@ -25,7 +25,7 @@ def get_request(url: str) -> str:
     This function receives a request from the site.
 
     Args:
-        url (str): A variable that stores the URL that will open in the browser Akasia.
+        url (str): A variable that stores the URL that will open in the browser Squirrel-Navigator.
 
     Returns:
         site_content (str): The variable contains the content of the site in html format.
@@ -118,7 +118,7 @@ def save_site_in_markdown(site_content: str, path: str) -> None:
 
 @dock()
 def main() -> None:
-    """ This is main function, what initializing web browser Akasia. """
+    """ This is main function, what initializing web browser Squirrel-Navigator. """
 
     print('''
           d8888 888                        d8b          
@@ -130,7 +130,7 @@ def main() -> None:
     d8888888888 888 "88b 888  888      X88 888 888  888 
    d88P     888 888  888 "Y888888  88888P' 888 "Y888888\n\n\n''')
     print(f'Version - {VERSION}\n'.center(58))
-    print('Akasia - A fork tiny python text-based web browser Asiakas.\n'.center(58))
+    print('Squirrel-Navigator - A private and secure text-based web browser.\n'.center(58))
     print('Type "quit" or "q" to shut down the browser.'.center(58))
     print('Type "google" or "g" to search information in Google.'.center(58))
     print('Type "wikipedia" or "w" to search information in Wikipedia.'.center(58))
