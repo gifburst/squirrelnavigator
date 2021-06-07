@@ -1,5 +1,5 @@
 '''
-setup.py is the Akasia setup file.
+setup.py is the Squirrel-Navigator setup file.
 '''
 
 from setuptools import setup
@@ -26,10 +26,10 @@ setup(
         "Topic :: Internet :: WWW/HTTP :: Browsers",
     ],
     python_requires=">=3.6",
-    py_modules=['akasia'],
+    py_modules=['squirrelnavigator'],
     entry_points={
-        'console_scripts': ['akasia = akasia:main', ], },
-    description='A private and secure text-based web browser Asiakas.',
+        'console_scripts': ['squirrelnavigator = squirrelnavigator:main', ], },
+    description='A private and secure text-based web browser.',
     long_description=open('README.md').read(),
     long_description_content_type="text/markdown",
     install_requires=[
