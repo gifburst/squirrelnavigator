@@ -5,11 +5,11 @@ setup.py is the Akasia setup file.
 from setuptools import setup
 
 setup(
-    version='1.7.0',
+    version='0.1',
     license="MIT License",
-    name='Akasia',
-    author='Robrecht De Rouck',
-    author_email='Robrecht.De.Rouck@gmail.com',
+    name='Squirrel-Navigator',
+    author='squirrelcom',
+    author_email='nope.gmail',
     maintainer='RIDERIUS',
     maintainer_email='riderius.help@gmail.com',
     project_urls={
